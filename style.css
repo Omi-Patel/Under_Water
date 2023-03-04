@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Kanit:wght@700&family=Prompt:wght@500&family=Ubuntu:wght@700&family=Unbounded:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* top: 0%; */
+    color: whitesmoke;
+    font-family: 'Aboreto', cursive;
+font-family: 'Kanit', sans-serif;
+font-family: 'Prompt', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Unbounded', cursive;
+}
+
+.container{
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+nav .logo{
+    font-size: 30px;
+    
+}
+nav .logo:hover{
+    cursor: pointer;
+    color: gold;
+    text-shadow: 0px 0px 20px gold;
+    transition: .5s;
+}
+
+nav{
+    /* padding:30px 58px; */
+
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button{
+    color: #fbfcfd;
+    padding: 10px 25px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+button:hover{
+    box-shadow:0px 0px 30px aqua;
+    transition: .5s;
+    color: gold;
+    text-shadow: 0px 0px 20px gold;
+}
+
+.content{
+    /* margin: 80px 50px; */
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.content h1{
+    font-size: 70px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+    text-shadow: 0px 0px 30px #cb5eee;
+    /* font-family: 'Aboreto', cursive;
+font-family: 'Kanit', sans-serif;
+font-family: 'Prompt', sans-serif;
+font-family: 'Shantell Sans', cursive;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Unbounded', cursive; */
+}
+
+
+
+
+
+.bubbles img{
+    width: 50px;
+    animation: bubble 7s linear infinite;
+}
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        
+        opacity: 1;
+    }
+    70%{
+        
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width: 25px;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 3s;
+    width: 25px;
+
+}
+.bubbles img:nth-child(4){
+    animation-delay: 4.5s;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 3s;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 6s;
+    width: 20px;
+
+}
+.bubbles img:nth-child(7){
+    animation-delay: 7s;
+    width: 35px;
+
+}
+
+@media screen and (max-width:450px) {
+    .content h1{
+        font-size: 56px;
+        line-height: 60px;
+        color: black;
+    }
+}
